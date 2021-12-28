@@ -34,9 +34,13 @@ router.delete('/notes/:id', (req, res) => {
     // get note id
     const id = req.params.id;
     // delete note with given id
-    
+    const noteDel = notes.filter(note => note.id !== id);
+    fs.writeFileSync(
+        path.join(__dirname, '../db/db.json'), 
+        JSON.stringify(noteDel, null, 2)
+    );
     // return new notes array to display on page
-    res.json(notes);
+    res.json(noteDel);
 });
 
 // export api routes 

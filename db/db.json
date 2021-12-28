@@ -1,16 +1,12 @@
 [
   {
-    "title": "Test Title",
-    "text": "Test text"
+    "title": "Penny & Griz",
+    "text": "trim nails",
+    "id": "f475578a-6fd2-4cb0-97a4-193014513bbc"
   },
   {
-    "title": "New note",
-    "text": "test ",
-    "id": "7576683b-0dc1-46e4-ab49-d03df7ab8ea6"
-  },
-  {
-    "title": "Tuesday",
-    "text": "It is Tuesday",
-    "id": "1b07c0d3-8a16-4b0a-b99b-7d9aa8c4708f"
+    "title": "Groceries",
+    "text": "Healthy snacks and meals for the week ",
+    "id": "ff432cf1-53a4-4069-894e-d648989eea05"
   }
 ]
