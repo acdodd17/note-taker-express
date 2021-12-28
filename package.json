@@ -4,13 +4,24 @@
   "description": "A note-taker application that uses Express.js to write and save notes for the user.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
-    "generate-unique-id": "^2.0.1"
+    "node": "^17.3.0",
+    "uuid": "^8.3.2",
+    "uuidv4": "^6.2.12"
   },
-  "keywords": []
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acdodd17/note-taker-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/acdodd17/note-taker-express/issues"
+  },
+  "homepage": "https://github.com/acdodd17/note-taker-express#readme"
 }

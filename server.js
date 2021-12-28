@@ -7,16 +7,16 @@ const apiRoutes = require('./routes/apiRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
 
 //set port 
-let PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
-//parse json data and use static files
+//Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json()); 
 app.use( express.static('public'));
 
 //use api and html routes
-app.use('/routes', apiRoutes);
-app.use('/routes', htmlRoutes);
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
